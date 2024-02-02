@@ -126,6 +126,93 @@ input{
 }
 
 
+/* styles for footer */
+
+.footer{
+    width:100%;
+}
+
+.footer-wrapper{
+    /* margin-top:30px;  */
+    width:100%;
+    background-color: #1B1B1B;
+    padding:32px 0 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-logo{
+    margin-bottom:6px;
+}
+.footer-navigation,.footer-nav,.footer-ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.footer-nav-link{
+    margin:14px 0;
+    color:#DCDCDC;
+    font-size:15px;
+    cursor: pointer;
+    line-height: 21px;
+}
+
+.footer-soc-icons-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin:26px 0 20px;
+}
+
+.soc-wrapper{
+    width:48px;
+    height:48px;
+    background-color: #232323;
+    border-radius: 4px;
+    margin:0 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.footer-contacts{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin-top:12px;
+}
+.footer-contacts >p{
+    font-size:15px;
+    color:#DCDCDC;
+    margin:8px 0;
+    line-height: 21px;
+}
+.smart-academy{
+    width:100%;
+    background-color: #080B15;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:24px 40px;
+}
+.smart-academy>p{
+    font-size:16px;
+    line-height: 22.4px;
+    color:#DCDCDC;
+    margin-right:3px;
+}
+.smart-academy>b{
+    font-size:16px;
+    line-height: 22.4px;
+    color:#DCDCDC;
+}
+
+
+
 /* media query for header and footer */
 
 @media(min-width:1024px){
@@ -149,6 +236,21 @@ input{
     }
     .mobile-navigation-wrapper{
         display: none;
+    }
+
+    .footer-navigation,.footer-nav,.footer-ul{
+        display: flex;
+        flex-direction:row;
+    }
+
+    .footer-nav-link{
+        margin:14px 20.5px;
+    }
+
+    .soc-wrapper{
+        width:40px;
+        height:40px;
+        margin:0 4px;
     }
 
 }
