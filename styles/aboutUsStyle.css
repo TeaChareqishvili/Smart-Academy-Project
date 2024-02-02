@@ -1,0 +1,71 @@
+/* styles for about us section */
+
+.about-us-section {
+    width: 100%;
+    border-top: solid 1px #2d2d2d;
+    background-color: #080b15;
+  }
+  .about-us-wrapper {
+    width: 100%;
+    padding: 32px 20px 88px;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "about-us-title "
+      "about-us-img"
+      "about-us-text";
+  }
+  
+  .about-us-title {
+    grid-area: about-us-title;
+  }
+  .about-us-title > h3 {
+    color: #dcdcdc;
+    font-size: 24px;
+    line-height: 31.2px;
+    margin-bottom: 32px;
+  }
+  
+  .about-us-img {
+    grid-area: about-us-img;
+    margin-bottom: 32px;
+  }
+  .about-us-img > img {
+    width: 100%;
+    border-radius:4px;
+   
+  }
+  
+  .about-us-text {
+    grid-area: about-us-text;
+  }
+  .about-us-text > p {
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #dcdcdc;
+  }
+  
+  /* media query */
+  
+  @media(min-width:1024px){
+      .about-us-wrapper {
+          width:75%;
+          margin:0 auto;
+          padding: 32px 20px 180px; /*??*/
+          display: grid;
+          grid-template-columns: 50% 50%;
+          grid-template-areas:
+            "about-us-title about-us-img"
+            "about-us-text about-us-img"    
+        }
+  
+        .about-us-img{
+          margin-bottom:0;
+        }
+  
+        .about-us-text{
+          max-width:508px;
+          margin-right:66px;    
+        }
+  }
+  
