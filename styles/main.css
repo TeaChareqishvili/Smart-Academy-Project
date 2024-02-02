@@ -1,0 +1,154 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    width:100%;
+    height:100vh;
+}
+
+/* styles for mobile header */
+
+.header{
+    width:100%;     
+    position: relative;
+}
+
+.header-wrapper{
+    width:100%;  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:32px 41px 21px; 
+    background-color: #080B15;
+    position: relative;
+    border-bottom:solid 1px #2D2D2D;
+    z-index: 1;
+}
+span{
+    color:#DCDCDC;
+    font-size:16px;
+    line-height: 22.4px;
+}
+
+.burger-menu{
+    width:24px;
+    height:24px;
+    padding:2px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    cursor: pointer;
+   
+}
+
+.top-line, .middle-line, .bottom-line{
+    width:100%;
+    background-color: #DCDCDC;
+    height:1px;
+    border-radius: 1.5px;
+}
+
+.logo{
+    width:100%;
+    padding: 32px 41px 21px;
+    border:solid 1px #2D2D2D;
+}
+
+.mobile-navigation-wrapper{
+    width:100%;
+    height:100vh;
+    position: absolute;
+    top:0;
+    left:0;
+    background-color: #080B15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding:44px 0;
+    z-index: 0;
+    display: none;
+}
+.mobile-navigation, .mobile-nav,.mobile-ul{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.mobile-nav-link{
+    font-size:17px;
+    line-height: 23.8px;
+    color:#DCDCDC;
+    cursor: pointer;
+    margin:20px 0;
+}
+.mobile-select-lang{
+    width:95px;
+    height: 34px;
+
+}
+
+/* header desktop style */
+
+.header-navigation-wrapper{
+    /* width:100%; */
+    display: none;
+   
+}
+.nav-link{
+    color:#DCDCDC;
+    font-size:15px;
+    line-height: 21px;
+    margin:0 20.5px;
+    cursor: pointer;
+}
+
+.select-lang{
+    width:95px;
+    height: 34px;
+    display: none;
+}
+
+input{
+    width:100%;
+    color: #1B1D21;
+    border-radius: 4px;
+    outline: none;
+    padding:8px 7px;
+}
+
+
+/* media query for header and footer */
+
+@media(min-width:1024px){
+    .header{
+       bottom:none;
+    }
+
+    .header-wrapper{
+        justify-content:space-around;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .header-navigation-wrapper,.desktop-nav,.desktop-ul{
+     display: flex;
+     align-items: center;
+     justify-content:center;
+    }
+    .select-lang{
+        display: block;
+    }
+    .mobile-navigation-wrapper{
+        display: none;
+    }
+
+}
