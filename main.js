@@ -181,8 +181,8 @@ services.map((item)=>{
               <img src="${item.image}" alt="service"/>
            </div>
               <h5>${item.serviceTitle}</h5>
-              <p>${item.serviceTitle}</p>
-           <button class="learn-more">გაეცანით</button>
+              <p>${item.serviceInfo}</p>
+           <button class="view-more">გაეცანით</button>
         </div>   
   `
     }
