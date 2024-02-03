@@ -26,6 +26,8 @@
 }
 /* !!!!!! banner */
 
+/* about us section for main  page */
+
 .about-us-section-main{
     width:100%;
     background-color: #080B15;
@@ -80,9 +82,69 @@
     cursor: pointer;
     align-self: flex-start;
     margin:46px 0 28px;
+    transition: color 0.3s ease;
 }
 
+.get-more:hover{
+    background-color: #C3D0FF1F;
+    color:#ADADAD;
+}
 
+/* service section style for main page*/
+
+.service-section-main{
+    width:100%;
+    background-color: #080B15; /* border ? */
+}
+.section-wrapper-main{
+    width:100%;  
+    padding:0 20px;
+}
+.see-all-service{
+    width:100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.see-all-service>h3{
+    font-size:24px;
+    line-height: 31.2px;
+    color:#DCDCDC;
+}
+.see-all{
+    background-color: #C3D0FF1F;
+    color:#ADADAD;
+    font-size:14px;
+    line-height: 19.6px;
+    border-radius:4px;
+    border:none;
+    cursor: pointer;
+    padding:10px 18px 10px 18px;
+}
+
+.service-data-main{
+    width:100%;
+    margin-top:32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow:scroll;
+    white-space: nowrap;
+}
+.service-data-main::-webkit-scrollbar {
+    display: none;
+}
+
+.main-service-info{
+    flex: 0 0 auto;
+    /* max-width:277px; */
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    justify-content:flex-start;
+}
 
 /* media query*/
 

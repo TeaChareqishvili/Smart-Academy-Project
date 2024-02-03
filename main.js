@@ -4,6 +4,7 @@
 
 const serviceWrapper = document.querySelector('.service-wrapper')
 
+
 // DATA FOR SERVICE SECTION
 
 const services = [
@@ -89,7 +90,7 @@ const services = [
         // }
     },
 ]
-console.log("olaaa")
+
 
 // RENDERING SERVICE DATA 
 
