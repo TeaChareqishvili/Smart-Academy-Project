@@ -11,7 +11,14 @@ body{
     width:100%;
     height:100vh;
     background-color: #080B15;
-   
+}
+body::-webkit-scrollbar{
+    display: none;
+}
+
+@font-face {
+    font-family: "helvetica";
+    src: url(../fonts/helvetica-neue-lt-geo-55-75.rar);
 }
 
 /* styles for mobile header */

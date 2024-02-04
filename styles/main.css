@@ -226,8 +226,10 @@
   .about-us-main-wrapper {
     max-width: 1120px;
     padding: 32px 41px 21px;
-    margin: auto;
-   
+    margin: auto;  
+  }
+  .main-service-info {
+    flex:unset;
   }
 
   .about-us-main {
