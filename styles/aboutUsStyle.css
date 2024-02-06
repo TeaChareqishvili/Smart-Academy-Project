@@ -1,0 +1,103 @@
+/* styles for about us section */
+
+.about-us-section {
+    width: 100%;
+    border-top: solid 1px #2d2d2d;
+  }
+
+  .about-us-container{
+    width:100%;
+    margin:auto;
+    padding: 32px 20px 88px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .about-us-wrapper {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-areas:
+      "about-us-title "
+      "about-us-img"
+      "about-us-text";
+  }
+  
+  .about-us-title {
+    grid-area: about-us-title;
+  }
+  .about-us-title > h2 {
+    font-family: "helvetica";
+    font-weight:700;
+    color: #dcdcdc;
+    font-size: 24px;
+    line-height: 31.2px;
+    margin-bottom: 32px;
+  }
+  
+  .about-us-img {
+    grid-area: about-us-img;
+    margin-bottom: 32px;
+    max-width:554px;
+
+  }
+  .about-us-img > img {
+    width: 100%;
+    height:100%;
+    border-radius:4px;
+   
+  }
+  
+  .about-us-text {
+    grid-area: about-us-text;
+    max-width:508px;
+  }
+  .about-us-text > p {
+    font-family:"helvetica";
+    font-weight:400;
+    font-size: 16px;
+    line-height: 25.6px;
+    color: #dcdcdc;
+  }
+  
+
+  
+  /* media query */
+  
+  @media(min-width:1024px){
+    .about-us-wrapper {
+      display: grid;
+      grid-template-columns: 50% 50%;
+      grid-template-areas:
+        "about-us-title about-us-img "
+        " about-us-text about-us-img";
+    
+    }
+
+    .about-us-title > h2 {
+      margin-bottom:unset;
+      margin-top:48px;
+    }
+
+    .about-us-text {
+     align-self: start;
+    }
+    .about-us-container{
+      max-width:1120px;
+      width:100%;
+      padding:16px 20px 180px;
+      margin:auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .about-us-img {
+      grid-area: about-us-img;
+      margin-bottom: 32px;
+      max-width:554px;
+      height: unset;
+    }
+  }
+
+
+
+  
