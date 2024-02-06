@@ -37,7 +37,7 @@
   background-color: #5373e3;
   color: #ffffff;
   font-size: 15px;
-  font-family: "helvetica";
+  font-family: "sa-helvetica-light";
   font-weight: 400;
   cursor: pointer;
   padding: 14px 28px 14px 28px;
@@ -54,7 +54,7 @@
 
 .slider-text-content > h1 {
   font-size: 40px;
-  font-family: "helvetica";
+  font-family: "sa-helvetica-bold";
   font-weight: 700;
   line-height: 52px;
   color: #ffffff;
@@ -63,7 +63,7 @@
 }
 
 .slider-text-content > p {
-  font-family: "helvetica";
+  font-family: "sa-helvetica-light";
   font-size: 16px;
   font-weight: 400;
   line-height: 25.6px;
@@ -125,7 +125,7 @@
 }
 
 .about-us-main-page > h2 {
-  font-family: "helvetica";
+  font-family: "sa-helvetica-bold";
   font-weight: 700;
   font-size: 24px;
   line-height: 31.2px;
@@ -150,7 +150,7 @@
   margin-top: 24px;
 }
 .about-us-main-text > p {
-  font-family: "helvetica";
+  font-family: "sa-helvetica-light";
   font-weight: 400;
   width: 100%;
   font-size: 16px;
@@ -166,7 +166,7 @@
 }
 
 .get-more {
-  font-family: "helvetica";
+  font-family: "sa-helvetica-light";
   font-weight: 400;
   background-color: #5373e3;
   color: #ffffff;
@@ -206,14 +206,14 @@
 }
 
 .see-all-service > h2 {
-  font-family: "helvetica";
+  font-family: "sa-helvetica-bold";
   font-weight: 700;
   font-size: 24px;
   line-height: 31.2px;
   color: #dcdcdc;
 }
 .see-all {
-  font-family: "helvetica";
+  font-family: "sa-helvetica-light";
   font-weight: 400;
   background-color: #c3d0ff1f;
   color: #adadad;
@@ -247,7 +247,7 @@
 
 .service-data-main::-webkit-scrollbar { display: none; }
 
-.service-image > img {
+.service-link > img {
   width: 100%;
   border-radius: 4px;
 }
@@ -264,7 +264,7 @@
   justify-content: flex-start;
 }
 .main-service-info > h3 {
-  font-family: "helvetica";
+  font-family: "sa-helvetica-bold";
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
@@ -272,7 +272,7 @@
   margin: 24px 0 12px;
 }
 .main-service-info > p {
-  font-family: "helvetica";
+  font-family: "sa-helvetica-light";
   font-weight: 400;
   font-size: 16px;
   line-height: 25.6px;
@@ -281,7 +281,7 @@
 }
 
 .view-more {
-  font-family:"helvetica";
+  font-family:"sa-helvetica-light";
   font-weight:400;
   background-color: #080b15;
   color: #adadad;

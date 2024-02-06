@@ -48,7 +48,7 @@
 }
 
 .service-navigate-link >h3{
-  font-family: "helvetica";
+  font-family: "sa-helvetica-bold";
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
@@ -58,7 +58,7 @@
 
 
 .service-data > p {
-  font-family: "helvetica";
+  font-family: "sa-helvetica-light";
   font-weight: 400;
   font-size: 16px;
   line-height: 25.6px;
@@ -67,7 +67,7 @@
 }
 
 .learn-more {
-  font-family: "helvetica";
+  font-family: "sa-helvetica-light";
   font-weight: 400;
   background-color: #232323;
   color: #8f8f8f;
@@ -87,11 +87,12 @@
   align-self: center;
 }
 
-.service-image > img {
+.service-img-link > img {
   width: 100%;
   margin-bottom: 24px;
   border-radius: 4px;
 }
+
 
 .service-section-title {
  max-width:1120px;
@@ -104,7 +105,7 @@
 }
 
 .service-section-title > h2 {
-  font-family: "helvetica";
+  font-family: "sa-helvetica-bold";
   font-weight: 700;
   font-size: 24px;
   line-height: 31.2px;
@@ -114,7 +115,7 @@
 }
 
 .service-section-title > p {
-  font-family: "helvetica";
+  font-family: "sa-helvetica-light";
   font-weight: 400;
   max-width: 279px;
   font-size: 16px;
@@ -155,24 +156,8 @@
   .service-navigate-link>h3:hover{
     color:#5373E3;
 }
-.view-more-service-btn{
-    display: block;
-    background-color: #1E2331;
-    padding:10px 18px 10px 18px;
-    border-radius:4px;
-    color:#8F8F8F;
-    font-family:'helvetica';
-    font-weight:400;
-    line-height: 19.6px;
-    border: none;
-    font-size:14px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
 
-.view-more-service-btn:hover{
-    background-color: #5373E3;
-    color:#DCDCDC;
-}
+
+
   
 }

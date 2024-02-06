@@ -29,7 +29,7 @@
     margin-bottom:16px;
 }
 .back>p{
-    font-family: "helvetica";
+    font-family: "sa-helvetica-light";
     font-weight: 400;
     font-size:14px;
     line-height: 18.2px;
@@ -58,7 +58,7 @@
 }
 
 .service-details>h2{
-    font-family: "helvetica";
+    font-family: "sa-helvetica-bold";
     font-weight: 700;
     font-size:24px;
     line-height: 31.2px;
@@ -67,7 +67,7 @@
 }
 
 .service-details >p{
-    font-family: "helvetica";
+    font-family: "sa-helvetica-light";
     font-weight:400;
     font-size:16px;
     line-height: 25.6px;
@@ -98,7 +98,7 @@
     margin:auto;
 }
 .services>h2{
-     font-family:"helvetica";
+     font-family:"sa-helvetica-bold";
      font-weight:700;
      font-size: 24px;
      line-height: 31.2px;
@@ -133,7 +133,7 @@
     justify-content: flex-start;
   }
   .main-service-info>h3{
-     font-family: "helvetica";
+     font-family: "sa-helvetica-bold";
       font-weight: 700;
       font-size:18px;
       line-height: 23.4px;
@@ -141,7 +141,7 @@
       margin:24px 0 12px;
   }
   .main-service-info>p{
-    font-family: "helvetica";
+    font-family: "sa-helvetica-light";
     font-weight: 400;
       font-size:16px;
       line-height: 25.6px;
