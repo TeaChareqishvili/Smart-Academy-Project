@@ -20,8 +20,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: background-color 0.3s ease;
 }
-
+.back-to-service:hover{
+    background-color: #5373E3;
+}
 .back{
     display: flex;
     align-items: center;
@@ -123,6 +126,16 @@
   .view-more-service::-webkit-scrollbar {
     display: none;
   }
+
+  /* .service-navigate-link >h3{
+    font-family: "sa-helvetica-bold";
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 23.4px;
+    color: #dcdcdc;
+    margin-bottom: 12px;
+  } */
+
   
   .main-service-info {
     flex: 0 0 auto;
@@ -132,14 +145,21 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .main-service-info>h3{
+  .service-navigate-link>h3{
      font-family: "sa-helvetica-bold";
       font-weight: 700;
       font-size:18px;
       line-height: 23.4px;
       color:#DCDCDC;
       margin:24px 0 12px;
+      cursor: pointer;
+      transition: color 0.3s ease;
   }
+  .service-navigate-link>h3:hover{
+    color:#5373E3;
+  }
+
+
   .main-service-info>p{
     font-family: "sa-helvetica-light";
     font-weight: 400;
