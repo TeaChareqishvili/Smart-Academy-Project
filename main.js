@@ -1,125 +1,132 @@
+// BURGER MENU FUNCTION -- ორი ვარიანტი 1. მენუზე დაკლიკებისას იშლება მობილურის ნავიგაცია, ხოლო ბურგერ მენიუ ქრება როგორც დიზაინში.
+// 2. ვარიანტი - ბურგერ მენიუზე დაკლიკებისას ირთვება პატარა ანიმაცია ბურგერ მენიუზე.
 
- // BURGER MENU FUNCTION -- ორი ვარიანტი 1. მენუზე დაკლიკებისას იშლება მობილურის ნავიგაცია, ხოლო ბურგერ მენიუ ქრება როგორც დიზაინში.
-                                    // 2. ვარიანტი - ბურგერ მენიუზე დაკლიკებისას ირთვება პატარა ანიმაცია ბურგერ მენიუზე. 
+const burgerMenu = document.querySelector(".burger-menu");
+const mobileNavigationwrapper = document.querySelector(
+  ".mobile-navigation-wrapper"
+);
+const topLine = document.querySelector(".top-line");
+const bottomLine = document.querySelector(".bottom-line");
+const middleLine = document.querySelector(".middle-line");
 
- const burgerMenu = document.querySelector('.burger-menu')
- const mobileNavigationwrapper = document.querySelector('.mobile-navigation-wrapper')
- const topLine = document.querySelector('.top-line')
- const bottomLine = document.querySelector('.bottom-line')
- const middleLine = document.querySelector('.middle-line')
-
- // BURGER MENU OPEN WITHOUT ANIMATION
+// BURGER MENU OPEN WITHOUT ANIMATION
 
 //  burgerMenu.addEventListener('click', function() {
 //     mobileNavigationwrapper.classList.toggle('active');
 //     burgerMenu.style.display = 'none';
 // });
 
-
 // BURGER MENU OPEN WITH ANIMATION
 
-burgerMenu.addEventListener('click', function () {
-    const isOpen = mobileNavigationwrapper.classList.toggle('active');
-    if (isOpen) {
-        document.body.style.overflow = 'hidden';
-    } else {
-        document.body.style.overflow = '';
-    }
+burgerMenu.addEventListener("click", function () {
+  const isOpen = mobileNavigationwrapper.classList.toggle("active");
+  if (isOpen) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+  }
 
-    topLine.classList.toggle('rotate-top-line', isOpen);
-    middleLine.classList.toggle('rotate-middle-line', isOpen);
-    bottomLine.classList.toggle('rotate-bottom-line', isOpen);
+  topLine.classList.toggle("rotate-top-line", isOpen);
+  middleLine.classList.toggle("rotate-middle-line", isOpen);
+  bottomLine.classList.toggle("rotate-bottom-line", isOpen);
 
-    topLine.classList.toggle('rotate-top-back', !isOpen);
-    middleLine.classList.toggle('rotate-middle-back', !isOpen);
-    bottomLine.classList.toggle('rotate-bottom-back', !isOpen);
+  topLine.classList.toggle("rotate-top-back", !isOpen);
+  middleLine.classList.toggle("rotate-middle-back", !isOpen);
+  bottomLine.classList.toggle("rotate-bottom-back", !isOpen);
 });
 
-// LANGUAGE CHANGE 
+// LANGUAGE CHANGE
 
-const selectLang = document.querySelector('.select-lang')
-const mobileSelectLang = document.querySelector('.mobile-select-lang')
-let currentLang = 'geo';
-  
+const selectLang = document.querySelector(".select-lang");
+const mobileSelectLang = document.querySelector(".mobile-select-lang");
+let currentLang = "eng";
 
-// FOR DESKTOP 
+// FOR DESKTOP
 
-selectLang.addEventListener("click", function() {
-  
-    currentLang = currentLang === 'geo' ? 'eng' : 'geo';
+selectLang.addEventListener("click", function () {
+  currentLang = currentLang === "eng" ? "geo" : "eng";
 
-    updateLanguageUI();
+  updateLanguageUI();
 });
 
 function updateLanguageUI() {
-    selectLang.innerHTML = '';
+  selectLang.innerHTML = "";
 
-   
-    if (currentLang === 'geo') {
-        selectLang.innerHTML += `
-            <div class="lang-container">
-                <img class="lang-map" src="./images/lang/geo.png" alt="GEO"/>
-                <span class="lang">Geo</span>
-            </div>
+  if (currentLang === "geo") {
+    selectLang.innerHTML += `
+        <a href="#">
+          <div class="lang-container">
+             <img class="lang-map" src="./images/lang/geo.png" alt="GEO"/>
+              <span class="lang">Geo</span>
+          </div>
+        </a>
+            
         `;
-    } else {
-        selectLang.innerHTML += `
-            <div class="lang-container">
-                <img class="lang-map" src="./images/lang/eng.png" alt="ENG"/>
-                <span class="lang">Eng</span>
-            </div>
+  } else {
+    selectLang.innerHTML += `
+    <a href="#"> 
+       <div class="lang-container">
+              <img class="lang-map" src="./images/lang/eng.png" alt="ENG"/>
+             <span class="lang">Eng</span>
+       </div>
+    </a>
+           
         `;
-    }
+  }
 }
 updateLanguageUI();
 
 // FOR MOBILE
 
-mobileSelectLang.addEventListener("click", function() {
-  
-    currentLang = currentLang === 'geo' ? 'eng' : 'geo';
+mobileSelectLang.addEventListener("click", function () {
+  currentLang = currentLang === "eng" ? "geo" : "eng";
 
-    updateMobileLanguageUI();
+  updateMobileLanguageUI();
 });
 
 function updateMobileLanguageUI() {
-    mobileSelectLang.innerHTML = '';
+  mobileSelectLang.innerHTML = "";
 
-    if (currentLang === 'geo') {
-        mobileSelectLang.innerHTML += `
-            <div class="lang-container">
-                <img class="lang-map" src="./images/lang/geo.png" alt="GEO"/>
-                <span class="lang">Geo</span>
-            </div>
+  if (currentLang === "geo") {
+    mobileSelectLang.innerHTML += `
+       <a href="#">
+          <div class="lang-container">
+            <img class="lang-map" src="./images/lang/geo.png" alt="GEO"/>
+           <span class="lang">Geo</span>
+         </div>
+       </a>
+           
         `;
-    } else {
-        mobileSelectLang.innerHTML += `
-            <div class="lang-container">
-                <img class="lang-map" src="./images/lang/eng.png" alt="ENG"/>
-                <span class="lang">Eng</span>
+  } else {
+    mobileSelectLang.innerHTML += `
+       <a href="#">
+           <div class="lang-container">
+              <img class="lang-map" src="./images/lang/eng.png" alt="ENG"/>
+              <span class="lang">Eng</span>
             </div>
+        </a>
+            
         `;
-    }
+  }
 }
 updateMobileLanguageUI();
 
-
 // CODE SNIPPET FOR RENDERING DATA FROM JAVASCRIPT
 
- // RENDER INFO ABOUT US 
+// RENDER INFO ABOUT US
 
 //  const aboutUsText = document.querySelector('.about-us-text')
 
 //  const aboutUs = [
 //     {
-//         text1:`საქართველოს 150 უმსხვილესი კერძო კომპანიის ჯამური შემოსავალი. წარმოგიდგენთ საქართველოს ყველაზე მაღალი შემოსავლის მქონე კერძო 
+//         text1:`საქართველოს 150 უმსხვილესი კერძო კომპანიის ჯამური შემოსავალი. წარმოგიდგენთ საქართველოს ყველაზე მაღალი შემოსავლის მქონე კერძო
 //                კომპანიების რეიტინგს, რომელიც კომპანიების მიერ საჯაროდ
 //                გამოქვეყნებული ფინანსური ანგარიშგებების საფუძველზე შედგა`,
-//         text2: `უმსხვილესი კომპანიების რეიტინგისგან განსხვავებით, რომელშიც კომპანიები აქტივების ღირებულების, შემოსავლებისა და 
-//                 წმინდა მოგების საფუძველზე შემდგარი ინდექსის მიხედვით არიან დალაგებული, ყველაზე 
+//         text2: `უმსხვილესი კომპანიების რეიტინგისგან განსხვავებით, რომელშიც კომპანიები აქტივების ღირებულების, შემოსავლებისა და
+//                 წმინდა მოგების საფუძველზე შემდგარი ინდექსის მიხედვით არიან დალაგებული, ყველაზე
 //                 შემოსავლიანი კომპანიების სიაში რანჟირება მათი შემოსავლების მიხედვით არის გაკეთებული.`,
-//         text3: `უმსხვილესი კომპანიების რეიტინგისგან განსხვავებით, რომელშიც კომპანიები აქტივების ღირებულების, 
-//                 შემოსავლებისა და წმინდა მოგების საფუძველზე შემდგარი ინდექსის მიხედვით არიან 
+//         text3: `უმსხვილესი კომპანიების რეიტინგისგან განსხვავებით, რომელშიც კომპანიები აქტივების ღირებულების,
+//                 შემოსავლებისა და წმინდა მოგების საფუძველზე შემდგარი ინდექსის მიხედვით არიან
 //                 დალაგებული, ყველაზე შემოსავლიანი კომპანიების სიაში რანჟირება მათი შემოსავლების მიხედვით არის გაკეთებული.`
 //     }
 // ]
@@ -134,10 +141,10 @@ updateMobileLanguageUI();
 //         <p>${text.text3}</p>
 //     `
 //     }
-  
+
 // })
 
-// RENDER TEXT CONTENT FOR MAIN PAGE 
+// RENDER TEXT CONTENT FOR MAIN PAGE
 
 //    const aboutUsMainText = document.querySelector('.about-us-main-text')
 
@@ -147,7 +154,7 @@ updateMobileLanguageUI();
 //             <p>${text.text1}</p>
 //             <br>
 //             <p>${text.text2}</p>
-//             <button class="get-more">გაიგეთ მეტი</button>     
+//             <button class="get-more">გაიგეთ მეტი</button>
 //         `
 //         }
 //    })
@@ -242,13 +249,12 @@ updateMobileLanguageUI();
 //     },
 // ]
 
-
-// RENDERING SERVICE DATA 
+// RENDERING SERVICE DATA
 
 // services.map((item)=>{
 //     if(serviceWrapper){
 //         serviceWrapper.innerHTML += `
-    
+
 //         <div class="service-data">
 //              <div class="service-image">
 //                  <img src="${item.image}" alt="service"/>
@@ -259,14 +265,13 @@ updateMobileLanguageUI();
 //         </div>
 //     `
 //     }
-   
+
 // })
 
-// RENDERING SERVER DATA FOR MAIN PAGE 
+// RENDERING SERVER DATA FOR MAIN PAGE
 
 //  const serviceDataMain = document.querySelector('.service-data-main')
 //  const viewMoreService = document.querySelector('.view-more-service')
-
 
 //  services.slice(0, 3).map((item) => {
 //     if (serviceDataMain) {
@@ -295,8 +300,3 @@ updateMobileLanguageUI();
 //         `;
 //     }
 // });
-
-
-
-
-

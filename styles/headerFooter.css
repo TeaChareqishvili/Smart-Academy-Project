@@ -18,13 +18,21 @@ body::-webkit-scrollbar{
 }
 
 @font-face {
-    font-family: "helvetica";
-    src: url(../fonts/helvetica-neue-lt-geo-55-75.rar);
+    font-family: "sa-helvetica-light";
+    src: url(../fonts/helvetica/helveticaneueltgeo-45lights.ttf);
+}
+@font-face {
+    font-family: "sa-helvetica-bold";
+    src: url(../fonts/helvetica/helvetica-neue-lt-geo-75-bold-caps-webfont.ttf);
 }
 
 @font-face {
-    font-family: 'telegraf';
-    src: url(../fonts/PP\ Telegraf\ -\ Free\ for\ Personal\ Use/);
+    font-family: 'sa-light';
+    src: url(../fonts/telegraf/PPTelegraf-Ultralight.otf)
+}
+@font-face {
+    font-family: 'sa-bold';
+    src: url(../fonts/telegraf/PPTelegraf-Ultrabold.otf)
 }
 
 /* styles for mobile header */
@@ -211,7 +219,7 @@ body::-webkit-scrollbar{
 }
 
 .mobile-nav-link{
-    font-family:"helvetica";
+    font-family:"sa-helvetica-light";
     font-weight:400;
     font-size:17px;
     line-height: 23.8px;
@@ -237,7 +245,7 @@ body::-webkit-scrollbar{
 }
 
 .nav-link{
-    font-family:'helvetica';
+    font-family:'sa-helvetica-light';
     font-weight: 400;
     color:#DCDCDC;
     font-size:15px;
@@ -273,7 +281,7 @@ body::-webkit-scrollbar{
     height:22px;
 }
 .lang{
-    font-family:"helvetica";
+    font-family:"sa-helvetica-light";
     font-weight:400;
     font-size:15px;
     line-height: 21px;
@@ -316,7 +324,7 @@ input{
     justify-content: center;
 }
 .footer-nav-link{
-    font-family: 'helvetica';
+    font-family: 'sa-helvetica-light';
     font-weight:400;
     margin:14px 0;
     color:#DCDCDC;
@@ -365,7 +373,7 @@ input{
     margin-top:12px;
 }
 .footer-contacts >p{
-    font-family: 'helvetica';
+    font-family: 'sa-helvetica-light';
     font-weight: 400;
     font-size:15px;
     color:#DCDCDC;
@@ -381,7 +389,7 @@ input{
     padding:24px 40px;
 }
 .smart-academy>p{
-    font-family: "telegraf";
+    font-family: "sa-light";
     font-weight:400;
     font-size:16px;
     line-height: 22.4px;
@@ -389,7 +397,7 @@ input{
     margin-right:3px;
 }
 .smart-academy>b{
-    font-family: "telegraf";
+    font-family: "sa-bold";
     font-weight:800;
     font-size:16px;
     line-height: 22.4px;

@@ -34,7 +34,7 @@
     align-self: flex-start;
 }
 .contact-title>h2{
-    font-family: 'helvetica';
+    font-family: 'sa-helvetica-bold';
     font-weight: 700;
     font-size: 24px;
     line-height: 31.2px;
@@ -52,7 +52,7 @@
 }
 
 .contact-info>p{
-    font-family: "helvetica";
+    font-family: "sa-helvetica-light";
     font-weight: 400;
     display: flex;
     flex-direction: column;
@@ -65,7 +65,7 @@
 }
 
 .contact-info>p>span{
-    font-family: "helvetica";
+    font-family: "sa-helvetica-light";
     font-weight: 400;
     color:#8C8C8C;
     font-size:14px;
@@ -73,7 +73,7 @@
     margin-bottom:4px;
 }
 .contact-info p:last-of-type{
-    font-family: "helvetica";
+    font-family: "sa-helvetica-light";
     font-weight: 400;
     font-size:14px;
     line-height: 19.6px;
