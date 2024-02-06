@@ -72,6 +72,7 @@
     font-size:16px;
     line-height: 25.6px;
     color:#DCDCDC;
+
 }
 
 .service-img{
@@ -114,6 +115,9 @@
     flex-wrap: nowrap;
     overflow: scroll;
     gap: 16px;
+    -ms-overflow-style: none;
+    scrollbar-width: none; 
+    
   }
 
   .view-more-service::-webkit-scrollbar {
@@ -173,7 +177,7 @@
     .service-img{
         display: flex;
         align-items: center;
-        justify-content:space-evenly;
+        justify-content:flex-start;
         flex-wrap: wrap;
         margin:24px 0;
     }
@@ -184,7 +188,7 @@
 
   @media(min-width:768px){
     .service-img>img{
-       max-width:267px;
+       max-width:258px;
        width:100%;
        margin:0 12px 12px 0;
     }
@@ -194,7 +198,6 @@
     .service-img{
         display: flex;
         align-items: center;
-        justify-content:flex-start;
         margin:24px 0;
         
     }
@@ -222,7 +225,6 @@
         display: flex;
         align-items: center;
         justify-content:flex-start;
-        flex-wrap:nowrap;
         margin:24px 0;
         
     }

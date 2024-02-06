@@ -85,7 +85,6 @@ mobileSelectLang.addEventListener("click", function() {
 function updateMobileLanguageUI() {
     mobileSelectLang.innerHTML = '';
 
-   
     if (currentLang === 'geo') {
         mobileSelectLang.innerHTML += `
             <div class="lang-container">

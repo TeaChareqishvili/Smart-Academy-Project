@@ -94,7 +94,7 @@
       grid-area: about-us-img;
       margin-bottom: 32px;
       max-width:554px;
-      height:593px;
+      height: unset;
     }
   }
 
