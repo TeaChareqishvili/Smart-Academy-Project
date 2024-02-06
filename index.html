@@ -11,39 +11,40 @@
 
 <body>
     <header class="header">
-        <div class="header-wrapper">
-            <div>
-                <span>Any logo</span>
-            </div>
-            <div class="burger-menu">
-                <div class="top-line"></div>
-                <div class="middle-line"></div>
-                <div class="bottom-line"></div>
-            </div>
-            <div class="header-navigation-wrapper">
-                <nav class="desktop-nav">
-                    <ul class="desktop-ul">
-                        <a class="nav-link" href="#">
-                            <li>მთავარი</li>
-                        </a>
-                        <a class="nav-link" href="aboutUs.html">
-                            <li>ჩვენ შესახებ</li>
-                        </a>
-                        <a class="nav-link" href="services.html">
-                            <li>სერვისები</li>
-                        </a>
-                        <a class="nav-link" href="contacts.html">
-                            <li>კონტაქტი</li>
-                        </a>
-                    </ul>
-                </nav>
-            </div>
-            <div class="select-lang">
-                <label>
-                    <input type="text" placeholder="GEO" />
-                </label>
+        <div class="header-container">
+            <div class="header-wrapper">
+                <div>
+                    <span class="for-logo">Any logo</span>
+                </div>
+                <div class="burger-menu">
+                    <div class="top-line"></div>
+                    <div class="middle-line"></div>
+                    <div class="bottom-line"></div>
+                </div>
+                <div class="header-navigation-wrapper">
+                    <nav class="desktop-nav">
+                        <ul class="desktop-ul">
+                            <a class="nav-link" href="#">
+                                <li>მთავარი</li>
+                            </a>
+                            <a class="nav-link" href="aboutUs.html">
+                                <li>ჩვენ შესახებ</li>
+                            </a>
+                            <a class="nav-link" href="services.html">
+                                <li>სერვისები</li>
+                            </a>
+                            <a class="nav-link" href="contacts.html">
+                                <li>კონტაქტი</li>
+                            </a>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="select-lang">
+                    <!-- language select renders here -->
+                </div>
             </div>
         </div>
+
         <div class="mobile-navigation-wrapper">
             <div class="mobile-navigation">
                 <nav class="mobile-nav">
@@ -64,9 +65,7 @@
                 </nav>
             </div>
             <div class="mobile-select-lang">
-                <label>
-                    <input type="text" placeholder="GEO" />
-                </label>
+                <!-- select language renders here  -->
             </div>
         </div>
     </header>
@@ -96,15 +95,15 @@
                 </div>
             </div>
         </section>
-        <!-- generate  text from js -->
-        <section class="about-us-section-main">
-            <div class="about-us-main-wrapper">
-                <div class="about-us-main">
-                    <h3>ჩვენ შესახებ</h3>
+
+        <section class="about-us-section-main-page">
+            <div class="about-us-main-page-wrapper">
+                <div class="about-us-main-page">
+                    <h2>ჩვენ შესახებ</h2>
                 </div>
                 <div class="about-us-main-content">
                     <div class="about-us-main-img">
-                        <!-- <img src="./images/aboutUS/aboutUs.png" alt="about" /> -->
+                     
                     </div>
                     <div class="about-us-main-text">
                         <p>საქართველოს 150 უმსხვილესი კერძო კომპანიის ჯამური შემოსავალი. წარმოგიდგენთ საქართველოს
@@ -125,11 +124,34 @@
         <section class="service-section-main">
             <div class="section-wrapper-main">
                 <div class="see-all-service">
-                    <h3>სერვისები</h3>
+                    <h2>სერვისები</h2>
                     <button class="see-all">იხილეთ ყველა</button>
                 </div>
                 <div class="service-data-main">
-                    <!-- service data for main renders here -->
+                    <div class="main-service-info">
+                        <div class="service-image">
+                            <img src="./images/services/service2.png" alt="service"/>
+                        </div>
+                        <h3>სერვისის დასახელება</h3>
+                        <p>ერთი ან რამდენიმე ადამიანის მიერ შექმნილი საიტი, რეგულარული ჩანაწერები..</p>
+                        <button onclick="window.location.href='aboutService.html'" class="view-more">გაეცანით</button>
+                    </div>
+                    <div class="main-service-info">
+                        <div class="service-image">
+                            <img src="./images/services/service3.png" alt="service"/>
+                        </div>
+                        <h3>სერვისის დასახელება</h3>
+                        <p>ერთი ან რამდენიმე ადამიანის მიერ შექმნილი საიტი, რეგულარული ჩანაწერები..</p>
+                        <button onclick="window.location.href='aboutService.html'" class="view-more">გაეცანით</button>
+                    </div>
+                    <div class="main-service-info">
+                        <div class="service-image">
+                            <img src="./images/services/service4.png" alt="service"/>
+                        </div>
+                        <h3>სერვისის დასახელება</h3>
+                        <p>ერთი ან რამდენიმე ადამიანის მიერ შექმნილი საიტი, რეგულარული ჩანაწერები..</p>
+                        <button onclick="window.location.href='aboutService.html'" class="view-more">გაეცანით</button>
+                    </div>
                 </div>
             </div>
         </section>
@@ -138,7 +160,7 @@
     <footer class="footer">
         <div class="footer-wrapper">
             <div class="footer-logo">
-                <span>Any logo</span>
+                <span class="for-logo">Any logo</span>
             </div>
             <div class="footer-navigation">
                 <nav class="footer-nav">

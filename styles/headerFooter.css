@@ -21,13 +21,18 @@ body::-webkit-scrollbar{
     src: url(../fonts/helvetica-neue-lt-geo-55-75.rar);
 }
 
+@font-face {
+    font-family: 'telegraf';
+    src: url(../fonts/PP\ Telegraf\ -\ Free\ for\ Personal\ Use/);
+}
+
 /* styles for mobile header */
 
 .header{
     width:100%;     
     position: relative;
-    border-bottom:solid 1px #2D2D2D;
 }
+
 
 .header-wrapper{
     max-width: 1120px;
@@ -36,10 +41,17 @@ body::-webkit-scrollbar{
     align-items: center;
     justify-content: space-between;
     padding:32px 41px 21px; 
-    position: relative;
-    z-index: 1;
+    z-index: 2;
 }
-span{
+
+.header-container{
+    width:100%;
+    border-bottom:2px solid #2D2D2D;
+    position: relative;
+    z-index: 2;
+
+}
+.for-logo{
     color:#DCDCDC;
     font-size:16px;
     line-height: 22.4px;
@@ -69,7 +81,7 @@ span{
     left:-2px;
     position: absolute;
     top: 5px;
-     animation: rotateTop 0.6s linear forwards; 
+    animation: rotateTop 0.6s linear forwards; 
 }
 
 .rotate-bottom-line{
@@ -168,13 +180,10 @@ span{
 }
 
 
-.logo{
-    width:100%;
-    padding: 32px 41px 21px;
-    border:solid 1px #2D2D2D;
-}
+
 
 .mobile-navigation-wrapper{
+    border-bottom:solid 1px #2D2D2D;
     width:100%;
     height:100vh;
     position: absolute;
@@ -186,7 +195,7 @@ span{
     align-items: center;
     justify-content: space-around;
     padding:44px 0;
-    z-index: 0;
+    z-index: 1;
     display: none;
 }
 .active{
@@ -201,6 +210,8 @@ span{
 }
 
 .mobile-nav-link{
+    font-family:"helvetica";
+    font-weight:400;
     font-size:17px;
     line-height: 23.8px;
     color:#DCDCDC;
@@ -213,19 +224,21 @@ span{
 }
 
 .mobile-select-lang{
-    width:95px;
+    width:85px;
     height: 34px;
-
+    cursor: pointer;
 }
 
 /* header desktop style */
 
 .header-navigation-wrapper{
-    /* width:100%; */
-    display: none;
-   
+    display: none; 
 }
+
+
 .nav-link{
+    font-family:'helvetica';
+    font-weight: 400;
     color:#DCDCDC;
     font-size:15px;
     line-height: 21px;
@@ -240,9 +253,33 @@ span{
 
 
 .select-lang{
-    width:95px;
+    width:85px;
     height: 34px;
-    display: none;
+    display: none; 
+    cursor: pointer;
+}
+.lang-container{
+    width:100%;
+    height:100%;
+    padding:6px;
+    background-color: #1B1D21;
+    border-radius:4px;
+    display: flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+}
+.lang-map{
+    width:22px;
+    height:22px;
+}
+.lang{
+    font-family:"helvetica";
+    font-weight:400;
+    font-size:15px;
+    line-height: 21px;
+    color:#DCDCDC;
+    margin-left:12px;
+
 }
 
 input{
@@ -270,7 +307,7 @@ input{
     justify-content: center;
 }
 .footer-logo{
-    margin-bottom:6px;
+    margin-bottom:40px;
 }
 .footer-navigation,.footer-nav,.footer-ul{
     display: flex;
@@ -279,6 +316,8 @@ input{
     justify-content: center;
 }
 .footer-nav-link{
+    font-family: 'helvetica';
+    font-weight:400;
     margin:14px 0;
     color:#DCDCDC;
     font-size:15px;
@@ -308,6 +347,11 @@ input{
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.soc-wrapper:hover{
+    background-color:#5373E3 ;
 }
 
 .footer-contacts{
@@ -318,6 +362,8 @@ input{
     margin-top:12px;
 }
 .footer-contacts >p{
+    font-family: 'helvetica';
+    font-weight: 400;
     font-size:15px;
     color:#DCDCDC;
     margin:8px 0;
@@ -332,16 +378,21 @@ input{
     padding:24px 40px;
 }
 .smart-academy>p{
+    font-family: "telegraf";
+    font-weight:400;
     font-size:16px;
     line-height: 22.4px;
     color:#DCDCDC;
     margin-right:3px;
 }
 .smart-academy>b{
+    font-family: "telegraf";
+    font-weight:800;
     font-size:16px;
     line-height: 22.4px;
     color:#DCDCDC;
 }
+
 
 
 
@@ -352,9 +403,6 @@ input{
        bottom:none;
     }
 
-    .header-wrapper{
-        /* justify-content:space-around; */
-    }
     .burger-menu{
         display: none;
     }
@@ -385,4 +433,7 @@ input{
         margin:0 4px;
     }
 
+    .footer-logo{
+        margin-bottom:32px;
+    }
 }
