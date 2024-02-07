@@ -237,6 +237,26 @@ body::-webkit-scrollbar{
     height: 34px;
     cursor: pointer;
 }
+.mobile-lang-container-eng{
+    width:100%;
+    height:100%;
+    padding:6px;
+    background-color: #1B1D21;
+    border-radius:4px;
+    display: flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+}
+.mobile-lang-container-geo{
+    width:100%;
+    height:100%;
+    padding:6px;
+    background-color: #1B1D21;
+    border-radius:4px;
+    display: flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+}
 
 /* header desktop style */
 
@@ -266,7 +286,7 @@ body::-webkit-scrollbar{
     display: none; 
     cursor: pointer;
 }
-.lang-container{
+.lang-container-eng{
     width:100%;
     height:100%;
     padding:6px;
@@ -275,6 +295,20 @@ body::-webkit-scrollbar{
     display: flex;
     align-items:flex-start;
     justify-content:flex-start;
+}
+.lang-container-geo{
+    width:100%;
+    height:100%;
+    padding:6px;
+    background-color: #1B1D21;
+    border-radius:4px;
+    display: flex;
+    align-items:flex-start;
+    justify-content:flex-start;
+}
+
+.change-lang{
+    display: none;
 }
 .lang-map{
     width:22px;

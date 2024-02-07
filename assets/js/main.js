@@ -35,81 +35,32 @@ burgerMenu.addEventListener("click", function () {
 	bottomLine.classList.toggle("rotate-bottom-back", !isOpen);
 });
 
-// LANGUAGE CHANGE
+// LANGUAGE CHANGE FOR DESKTOP
 
-const selectLang = document.querySelector(".select-lang");
-const mobileSelectLang = document.querySelector(".mobile-select-lang");
-let currentLang = "eng";
 
-// FOR DESKTOP
+const selectLang = document.querySelector('.select-lang');
+const langContainerEng = document.querySelector('.lang-container-eng')
+const langContainerGeo = document.querySelector('.lang-container-geo')
+const mobileLangContainerEng = document.querySelector('.mobile-lang-container-eng')
+const mobileLangContainerGeo = document.querySelector('.mobile-lang-container-geo')
 
-selectLang.addEventListener("click", function () {
-	currentLang = currentLang === "eng" ? "geo" : "eng";
+// Add click event listener to the container
 
-	updateLanguageUI();
-});
-
-function updateLanguageUI() {
-	selectLang.innerHTML = "";
-
-	if (currentLang === "geo") {
-		selectLang.innerHTML += `
-        <a href="#">
-          <div class="lang-container">
-             <img class="lang-map" src="assets/images/lang/geo.png" alt="GEO"/>
-              <span class="lang">Geo</span>
-          </div>
-        </a>
-            
-        `;
-	} else {
-		selectLang.innerHTML += `
-    <a href="#"> 
-       <div class="lang-container">
-              <img class="lang-map" src="assets/images/lang/eng.png" alt="ENG"/>
-             <span class="lang">Eng</span>
-       </div>
-    </a>
-           
-        `;
-	}
-}
-updateLanguageUI();
+   selectLang.addEventListener('click',function(){
+	  langContainerEng.classList.toggle('change-lang')
+	  langContainerGeo.classList.toggle('change-lang')
+   })
 
 // FOR MOBILE
 
-mobileSelectLang.addEventListener("click", function () {
-	currentLang = currentLang === "eng" ? "geo" : "eng";
+const mobileSelectLang = document.querySelector('.mobile-select-lang')
 
-	updateMobileLanguageUI();
-});
+mobileSelectLang.addEventListener('click',function(){
+	mobileLangContainerEng.classList.toggle('change-lang')
+	mobileLangContainerGeo.classList.toggle('change-lang')
+ })
 
-function updateMobileLanguageUI() {
-	mobileSelectLang.innerHTML = "";
 
-	if (currentLang === "geo") {
-		mobileSelectLang.innerHTML += `
-       <a href="#">
-          <div class="lang-container">
-            <img class="lang-map" src="assets/images/lang/geo.png" alt="GEO"/>
-           <span class="lang">Geo</span>
-         </div>
-       </a>
-           
-        `;
-	} else {
-		mobileSelectLang.innerHTML += `
-       <a href="#">
-           <div class="lang-container">
-              <img class="lang-map" src="assets/images/lang/eng.png" alt="ENG"/>
-              <span class="lang">Eng</span>
-            </div>
-        </a>
-            
-        `;
-	}
-}
-updateMobileLanguageUI();
 
 // CODE SNIPPET FOR RENDERING DATA FROM JAVASCRIPT
 
