@@ -51,7 +51,7 @@
     align-self:flex-start;
 }
 
-.contact-info>p{
+.contact-info>a{
     font-family: "sa-helvetica-light";
     font-weight: 400;
     display: flex;
@@ -62,24 +62,52 @@
     font-size:15px;
     line-height: 21px;
     margin-bottom:24px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+.contact-info > a:nth-child(2) {
+    margin-bottom: 0; 
+}
+.contact-info>a:hover{
+    color:#5373E3;
 }
 
-.contact-info>p>span{
+.contact-info>a>span{
     font-family: "sa-helvetica-light";
     font-weight: 400;
     color:#8C8C8C;
     font-size:14px;
     line-height: 19.6px;
     margin-bottom:4px;
+    cursor: pointer;
 }
-.contact-info p:last-of-type{
+.span{
+    display: flex;
+    align-items: flex-start;
+    font-family: "sa-helvetica-light";
+    font-weight: 400;
+    color:#8C8C8C;
+    font-size:14px;
+    line-height: 19.6px;
+    cursor: pointer;
+}
+
+/* .contact-info >p{
     font-family: "sa-helvetica-light";
     font-weight: 400;
     font-size:14px;
     line-height: 19.6px;
     color:#8C8C8C;
     margin-bottom:12px;
-}
+} */
+/* .soc-title{
+    font-family: "sa-helvetica-light";
+    font-weight: 400;
+    font-size:14px;
+    line-height: 19.6px;
+    color:#8C8C8C;
+    margin-bottom:12px;
+} */
 
 .contact-map {
     padding-bottom:80%;
@@ -103,6 +131,7 @@
     display:flex;
     align-items: flex-start;
     justify-content: flex-start;
+    margin-top: 12px;
 }
 
 .soc-icon-wrapper{
@@ -116,6 +145,12 @@
     justify-content: center;
     cursor: pointer;
     transition: background-color 0.3s ease;
+}
+
+.soc-icon-wrapper>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .soc-icon-wrapper:hover{
     background-color: #5373E3;
@@ -141,13 +176,18 @@
     }
     .contact-info{
         align-items: center;
-        justify-content: center;
-     
+        justify-content: center;   
     }
-    .contact-info>p{   
+    .contact-info>a{   
         align-items: center;
         justify-content:center;
     }
+ 
+     .span{
+        align-items: center;
+        justify-content:center;
+    }
+    
     .soc-icon-wrapper{   
         margin: 0 8px;    
     }
@@ -181,10 +221,13 @@
         align-items: flex-start;
         justify-content: flex-start;
     }
-    .contact-info>p{   
+    .contact-info>a{   
         align-items:flex-start;
-        justify-content:flex-start;
-      
+        justify-content:flex-start;   
+    }
+    .span{
+        align-items:flex-start;
+        justify-content:flex-start;   
     }
     .soc-icon-wrapper{   
         width:40px;

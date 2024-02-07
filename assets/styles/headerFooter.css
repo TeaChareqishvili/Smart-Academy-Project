@@ -360,6 +360,11 @@ input{
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+.soc-wrapper>a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 .soc-wrapper:hover{
     background-color:#5373E3 ;
@@ -372,7 +377,7 @@ input{
     justify-content: center;
     margin-top:12px;
 }
-.footer-contacts >p{
+.footer-contacts >a{
     font-family: 'sa-helvetica-light';
     font-weight: 400;
     font-size:15px;
