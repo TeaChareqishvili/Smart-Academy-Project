@@ -3,7 +3,7 @@
 
 const burgerMenu = document.querySelector(".burger-menu");
 const mobileNavigationwrapper = document.querySelector(
-  ".mobile-navigation-wrapper"
+	".mobile-navigation-wrapper"
 );
 const topLine = document.querySelector(".top-line");
 const bottomLine = document.querySelector(".bottom-line");
@@ -19,20 +19,20 @@ const middleLine = document.querySelector(".middle-line");
 // BURGER MENU OPEN WITH ANIMATION
 
 burgerMenu.addEventListener("click", function () {
-  const isOpen = mobileNavigationwrapper.classList.toggle("active");
-  if (isOpen) {
-    document.body.style.overflow = "hidden";
-  } else {
-    document.body.style.overflow = "";
-  }
+	const isOpen = mobileNavigationwrapper.classList.toggle("active");
+	if (isOpen) {
+		document.body.style.overflow = "hidden";
+	} else {
+		document.body.style.overflow = "";
+	}
 
-  topLine.classList.toggle("rotate-top-line", isOpen);
-  middleLine.classList.toggle("rotate-middle-line", isOpen);
-  bottomLine.classList.toggle("rotate-bottom-line", isOpen);
+	topLine.classList.toggle("rotate-top-line", isOpen);
+	middleLine.classList.toggle("rotate-middle-line", isOpen);
+	bottomLine.classList.toggle("rotate-bottom-line", isOpen);
 
-  topLine.classList.toggle("rotate-top-back", !isOpen);
-  middleLine.classList.toggle("rotate-middle-back", !isOpen);
-  bottomLine.classList.toggle("rotate-bottom-back", !isOpen);
+	topLine.classList.toggle("rotate-top-back", !isOpen);
+	middleLine.classList.toggle("rotate-middle-back", !isOpen);
+	bottomLine.classList.toggle("rotate-bottom-back", !isOpen);
 });
 
 // LANGUAGE CHANGE
@@ -44,70 +44,70 @@ let currentLang = "eng";
 // FOR DESKTOP
 
 selectLang.addEventListener("click", function () {
-  currentLang = currentLang === "eng" ? "geo" : "eng";
+	currentLang = currentLang === "eng" ? "geo" : "eng";
 
-  updateLanguageUI();
+	updateLanguageUI();
 });
 
 function updateLanguageUI() {
-  selectLang.innerHTML = "";
+	selectLang.innerHTML = "";
 
-  if (currentLang === "geo") {
-    selectLang.innerHTML += `
+	if (currentLang === "geo") {
+		selectLang.innerHTML += `
         <a href="#">
           <div class="lang-container">
-             <img class="lang-map" src="./images/lang/geo.png" alt="GEO"/>
+             <img class="lang-map" src="assets/images/lang/geo.png" alt="GEO"/>
               <span class="lang">Geo</span>
           </div>
         </a>
             
         `;
-  } else {
-    selectLang.innerHTML += `
+	} else {
+		selectLang.innerHTML += `
     <a href="#"> 
        <div class="lang-container">
-              <img class="lang-map" src="./images/lang/eng.png" alt="ENG"/>
+              <img class="lang-map" src="assets/images/lang/eng.png" alt="ENG"/>
              <span class="lang">Eng</span>
        </div>
     </a>
            
         `;
-  }
+	}
 }
 updateLanguageUI();
 
 // FOR MOBILE
 
 mobileSelectLang.addEventListener("click", function () {
-  currentLang = currentLang === "eng" ? "geo" : "eng";
+	currentLang = currentLang === "eng" ? "geo" : "eng";
 
-  updateMobileLanguageUI();
+	updateMobileLanguageUI();
 });
 
 function updateMobileLanguageUI() {
-  mobileSelectLang.innerHTML = "";
+	mobileSelectLang.innerHTML = "";
 
-  if (currentLang === "geo") {
-    mobileSelectLang.innerHTML += `
+	if (currentLang === "geo") {
+		mobileSelectLang.innerHTML += `
        <a href="#">
           <div class="lang-container">
-            <img class="lang-map" src="./images/lang/geo.png" alt="GEO"/>
+            <img class="lang-map" src="assets/images/lang/geo.png" alt="GEO"/>
            <span class="lang">Geo</span>
          </div>
        </a>
            
         `;
-  } else {
-    mobileSelectLang.innerHTML += `
+	} else {
+		mobileSelectLang.innerHTML += `
        <a href="#">
            <div class="lang-container">
-              <img class="lang-map" src="./images/lang/eng.png" alt="ENG"/>
+              <img class="lang-map" src="assets/images/lang/eng.png" alt="ENG"/>
               <span class="lang">Eng</span>
             </div>
         </a>
             
         `;
-  }
+	}
 }
 updateMobileLanguageUI();
 
@@ -167,7 +167,7 @@ updateMobileLanguageUI();
 
 // const services = [
 //     {
-//         image:"./images/services/service1.png",
+//         image:"assets/images/services/service1.png",
 //         serviceTitle:"სერვისის დასახელება",
 //         serviceInfo:"ერთი ან რამდენიმე ადამიანის მიერ შექმნილი საიტი, რეგულარული ჩანაწერები..",
 //         // button: {
@@ -176,7 +176,7 @@ updateMobileLanguageUI();
 //         // }
 //     },
 //     {
-//         image:"./images/services/service2.png",
+//         image:"assets/images/services/service2.png",
 //         serviceTitle:"სერვისის დასახელება",
 //         serviceInfo:"ერთი ან რამდენიმე ადამიანის მიერ შექმნილი საიტი, რეგულარული ჩანაწერები..",
 //         // button: {
@@ -185,7 +185,7 @@ updateMobileLanguageUI();
 //         // }
 //     },
 //     {
-//         image:"./images/services/service3.png",
+//         image:"assets/images/services/service3.png",
 //         serviceTitle:"სერვისის დასახელება",
 //         serviceInfo:"ერთი ან რამდენიმე ადამიანის მიერ შექმნილი საიტი, რეგულარული ჩანაწერები..",
 //         // button: {
@@ -194,7 +194,7 @@ updateMobileLanguageUI();
 //         // }
 //     },
 //     {
-//         image:"./images/services/service4.png",
+//         image:"assets/images/services/service4.png",
 //         serviceTitle:"სერვისის დასახელება",
 //         serviceInfo:"ერთი ან რამდენიმე ადამიანის მიერ შექმნილი საიტი, რეგულარული ჩანაწერები..",
 //         // button: {
@@ -203,7 +203,7 @@ updateMobileLanguageUI();
 //         // }
 //     },
 //     {
-//         image:"./images/services/service5.png",
+//         image:"assets/images/services/service5.png",
 //         serviceTitle:"სერვისის დასახელება",
 //         serviceInfo:"ერთი ან რამდენიმე ადამიანის მიერ შექმნილი საიტი, რეგულარული ჩანაწერები..",
 //         // button: {
@@ -212,7 +212,7 @@ updateMobileLanguageUI();
 //         // }
 //     },
 //     {
-//         image:"./images/services/service6.png",
+//         image:"assets/images/services/service6.png",
 //         serviceTitle:"სერვისის დასახელება",
 //         serviceInfo:"ერთი ან რამდენიმე ადამიანის მიერ შექმნილი საიტი, რეგულარული ჩანაწერები..",
 //         // button: {
@@ -221,7 +221,7 @@ updateMobileLanguageUI();
 //         // }
 //     },
 //     {
-//         image:"./images/services/service7.png",
+//         image:"assets/images/services/service7.png",
 //         serviceTitle:"სერვისის დასახელება",
 //         serviceInfo:"ერთი ან რამდენიმე ადამიანის მიერ შექმნილი საიტი, რეგულარული ჩანაწერები..",
 //         // button: {
@@ -230,7 +230,7 @@ updateMobileLanguageUI();
 //         // }
 //     },
 //     {
-//         image:"./images/services/service8.png",
+//         image:"assets/images/services/service8.png",
 //         serviceTitle:"სერვისის დასახელება",
 //         serviceInfo:"ერთი ან რამდენიმე ადამიანის მიერ შექმნილი საიტი, რეგულარული ჩანაწერები..",
 //         // button: {
@@ -239,7 +239,7 @@ updateMobileLanguageUI();
 //         // }
 //     },
 //     {
-//         image:"./images/services/service9.png",
+//         image:"assets/images/services/service9.png",
 //         serviceTitle:"სერვისის დასახელება",
 //         serviceInfo:"ერთი ან რამდენიმე ადამიანის მიერ შექმნილი საიტი, რეგულარული ჩანაწერები..",
 //         // button: {
