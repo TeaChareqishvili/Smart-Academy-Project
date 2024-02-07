@@ -188,6 +188,7 @@
 	transition: all 0.3s ease;
 }
 
+
 .get-more:hover {
 	background-color: #c3d0ff1f;
 	color: #adadad;
@@ -379,7 +380,7 @@
 		max-width: 1120px;
 		width: 100%;
 		margin: 32px auto 0;
-		justify-content: center;
+		justify-content: flex-start;
 		gap: 20px;
 	}
 	.see-all-service {
