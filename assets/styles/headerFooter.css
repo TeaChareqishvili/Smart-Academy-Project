@@ -245,8 +245,7 @@ body::-webkit-scrollbar{
     border-radius:4px;
     display: flex;
     align-items:flex-start;
-    text-decoration: none; /* Remove underline from anchor tags */
-    display: inline-block;
+    text-decoration: none; 
     justify-content:flex-start;
 }
 .mobile-lang-container-geo{
@@ -257,6 +256,7 @@ body::-webkit-scrollbar{
     border-radius:4px;
     display: flex;
     align-items:flex-start;
+    text-decoration: none; 
     justify-content:flex-start;
 }
 
