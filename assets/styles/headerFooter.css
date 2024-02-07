@@ -420,6 +420,10 @@ input{
     color:#DCDCDC;
     margin:8px 0;
     line-height: 21px;
+    transition: color 0.3s ease;
+}
+.footer-contacts>a:hover{
+    color:#5373E3;
 }
 .smart-academy{
     width:100%;
