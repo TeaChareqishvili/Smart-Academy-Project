@@ -18,6 +18,10 @@ body::-webkit-scrollbar{
 }
 
 @font-face {
+    font-family: "sa-helvetica-roman";
+    src: url(../fonts/helvetica/HELVETICANEUELTGEO-55ROMAN.ttf);
+}
+@font-face {
     font-family: "sa-helvetica-light";
     src: url(../fonts/helvetica/HELVETICANEUELTGEO-45LIGHTS.ttf);
 }
