@@ -32,12 +32,13 @@
     margin-bottom:16px;
 }
 .back>p{
-    font-family: "sa-helvetica-light";
+    font-family: "sa-helvetica-bold";
     font-weight: 400;
     font-size:14px;
     line-height: 18.2px;
     color:#DCDCDC;
     margin-left:16px;
+    font-feature-settings: "case" on; 
 }
 
 .service-banner{
@@ -73,6 +74,7 @@
     line-height: 31.2px;
     color:#DCDCDC;
     margin-bottom:24px;
+    font-feature-settings: "case" on; 
 }
 
 .service-details >p{
@@ -113,6 +115,7 @@
      line-height: 31.2px;
      color:#DCDCDC;
      margin-top:48px;
+     font-feature-settings: "case" on; 
 }
 
 .view-more-service {
@@ -160,6 +163,7 @@
       margin:24px 0 12px;
       cursor: pointer;
       transition: color 0.3s ease;
+      font-feature-settings: "case" on; 
   }
   .service-navigate-link>h3:hover{
     color:#5373E3;

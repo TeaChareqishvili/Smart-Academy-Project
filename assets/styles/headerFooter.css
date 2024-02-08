@@ -19,11 +19,11 @@ body::-webkit-scrollbar{
 
 @font-face {
     font-family: "sa-helvetica-light";
-    src: url(../fonts/helvetica/helveticaneueltgeo-45lights.ttf);
+    src: url(../fonts/helvetica/HELVETICANEUELTGEO-45LIGHTS.ttf);
 }
 @font-face {
     font-family: "sa-helvetica-bold";
-    src: url(../fonts/helvetica/helvetica-neue-lt-geo-75-bold-caps-webfont.ttf);
+    src: url(../fonts/helvetica/HELVETICA-NEUE-LT-GEO-75-BOLD.ttf);
 }
 
 @font-face {

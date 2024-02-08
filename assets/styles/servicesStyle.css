@@ -54,6 +54,7 @@
   line-height: 23.4px;
   color: #dcdcdc;
   margin-bottom: 12px;
+  font-feature-settings: "case" on; 
 }
 
 
@@ -111,6 +112,7 @@
   line-height: 31.2px;
   color: #dcdcdc;
   margin-bottom: 8px;
+  font-feature-settings: "case" on; 
  
 }
 

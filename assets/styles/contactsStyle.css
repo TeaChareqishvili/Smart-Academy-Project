@@ -39,6 +39,7 @@
     font-size: 24px;
     line-height: 31.2px;
     color:#DCDCDC;
+    font-feature-settings: "case" on; 
 }
 
 .contact-map{
