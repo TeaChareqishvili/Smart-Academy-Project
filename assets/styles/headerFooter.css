@@ -64,13 +64,10 @@ body::-webkit-scrollbar{
 
 .header-logo{
     width:87px;
-    height:28px;
     cursor: pointer;
 }
 .header-logo>a>img{
-    width:100%;
-    height:100%;
-    
+    width:100%;   
 }
 
 .burger-menu{
