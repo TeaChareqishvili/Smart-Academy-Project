@@ -67,7 +67,7 @@ body::-webkit-scrollbar{
 
 
 .header-logo{
-    width:87px;
+    width:100px;
     cursor: pointer;
 }
 .header-logo>a>img{
@@ -360,8 +360,7 @@ input{
 }
 .footer-logo{
     margin-bottom:40px;
-    width:87px;
-    height:28px;
+    width:100px;
     cursor: pointer;
 }
 
