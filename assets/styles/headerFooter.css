@@ -46,6 +46,11 @@ body::-webkit-scrollbar{
     position: relative;
 }
 
+.logo{
+    color:white;
+    font-family:"sa-helvetica-light";
+    font-size:20px;
+}
 
 .header-wrapper{
     max-width: 1120px;
